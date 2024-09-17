@@ -9,17 +9,27 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <img class="dark-icon" src="images/magnify.svg" alt="search icon">
-            <input type="text" id="search">
-            <img class="dark-icon" src="images/bell-alert-outline.svg" alt="notification icon">
-            <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
-            <p id="badge-name">Travis Jones</p>
-            <img class="large-badge" src="images/account-circle-outline.svg" alt="large profile badge">
-            <div id="greeting">
-                <p>Hi there,</p>
-                <p>Travis Jones (@tjonesutd87)</p>
+            <div id="search">
+                <img class="dark-icon" src="images/magnify.svg" alt="search icon">
+                <input type="text" id="search-bar">
             </div>
-            <button id="new">New</button><button id="upload">Upload</button><button id="share">Share</button>
+            <div id="profile-tray">
+                <img class="dark-icon" src="images/bell-alert-outline.svg" alt="notification icon">
+                <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
+                <p id="badge-name">Travis Jones</p>
+            </div>
+            <div id="greeting-container">
+                <img class="large-badge" src="images/account-circle-outline.svg" alt="large profile badge">
+                <div id="greeting">
+                    <p>Hi there,</p>
+                    <p>Travis Jones (@tjonesutd87)</p>
+                </div>
+            </div>
+            <div id="button-container">
+                <button id="new">New</button>
+                <button id="upload">Upload</button>
+                <button id="share">Share</button>
+            </div>
         </div>
         <div id="sidebar">
             <div id="logo">
@@ -48,8 +58,8 @@
             </div>
         </div>
         <div id="main-content">
-            <h2 class="content-header">Your Projects</h2>
-            <h2 class="content-header">Announcements</h2>
+            <h2 class="content-header" id="card-header">Your Projects</h2>
+            <h2 class="content-header" id="announcement-header">Announcements</h2>
             <div id="card-container">
                 <div class="card">
                     <div id="card-highlight"></div>
@@ -112,7 +122,7 @@
                     </div>
                 </div>
             </div>
-            <div id="announcments">
+            <div id="announcements">
                 <div class="announcement">
                     <p class="announcement-title">Q4 Financials</p>
                     <p class="announcement-preview">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis atque nihil sint, aliquid corrupti laudantium sit in tempore ipsum, quos voluptates numquam provident iusto totam, expedita asperiores quo aliquam quas!</p>
@@ -126,7 +136,7 @@
                     <p class="announcement-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia eum est dolor at porro rem, aut minima iste praesentium laudantium recusandae! Eaque consequatur reiciendis molestias minima rerum eius. Dolore?</p>
                 </div>
             </div>
-            <h2 class="content-header"></h2>
+            <h2 class="content-header" id="trending-header">Trending</h2>
             <div id="trending">
                 <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
                 <p>@mev</p>
