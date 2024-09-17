@@ -1,0 +1,45 @@
+.dark-icon, .light-icon {
+    height: 40px;
+    width: 40px;
+}
+
+.small-badge {
+    height: 60px;
+    width: 60px;
+}
+.large-badge {
+    height: 100px;
+    width: 100px;
+}
+
+#logo img {
+    height: 100px;
+    width: 100px;
+}
+
+.card-icon {
+    height: 30px;
+    width: 30px;
+}
+
+#wrapper {
+    display: grid;
+    grid-template: 1fr 4fr/1fr 4fr;
+    height: 100vw;
+    width: 100vw;
+}
+
+#header {
+    grid-row: 1;
+    grid-column: 2/3;
+}
+
+#sidebar {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+#main-content {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}

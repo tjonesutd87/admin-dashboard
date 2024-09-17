@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div id="wrapper">
         <div id="header">
-            <img src="" alt="search icon">
+            <img class="dark-icon" src="images/magnify.svg" alt="search icon">
             <input type="text" id="search">
-            <img src="" alt="notification icon">
-            <img src="" alt="profile badge">
+            <img class="dark-icon" src="images/bell-alert-outline.svg" alt="notification icon">
+            <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
             <p id="badge-name">Travis Jones</p>
-            <img src="" alt="large profile badge">
+            <img class="large-badge" src="images/account-circle-outline.svg" alt="large profile badge">
             <div id="greeting">
                 <p>Hi there,</p>
                 <p>Travis Jones (@tjonesutd87)</p>
@@ -22,75 +23,93 @@
         </div>
         <div id="sidebar">
             <div id="logo">
-                <img src="" alt="logo">
+                <img src="images/owl.svg" alt="logo">
                 <h1>Dashboard</h1>
             </div>
             <div id="nav">
-                <img src="" alt="Home">
+                <img class="light-icon" src="images/home.svg" alt="Home">
                 <p>Home</p>
-                <img src="" alt="Profile">
+                <img class="light-icon" src="images/account-details.svg" alt="Profile">
                 <p>Profile</p>
-                <img src="" alt="Messages">
+                <img class="light-icon" src="images/message-reply.svg" alt="Messages">
                 <p>Messages</p>
-                <img src="" alt="History">
+                <img class="light-icon" src="images/history.svg" alt="History">
                 <p>History</p>
-                <img src="" alt="Tasks">
+                <img class="light-icon" src="images/calendar-check.svg" alt="Tasks">
                 <p>Tasks</p>
-                <img src="" alt="Communities">
+                <img class="light-icon" src="images/human-queue.svg" alt="Communities">
                 <p>Communities</p>
-                <img src="" alt="Settings">
+                <img class="light-icon" src="images/cog.svg" alt="Settings">
                 <p>Settings</p>
-                <img src="" alt="Support">
+                <img class="light-icon" src="images/frequently-asked-questions.svg" alt="Support">
                 <p>Support</p>
-                <img src="" alt="Privacy">
+                <img class="light-icon" src="images/shield-account-variant.svg" alt="Privacy">
                 <p>Privacy</p>
             </div>
         </div>
-        <div id="main">
+        <div id="main-content">
             <h2 class="content-header">Your Projects</h2>
-            <h2 class="content-header">Announcments</h2>
+            <h2 class="content-header">Announcements</h2>
             <div id="card-container">
                 <div class="card">
                     <div id="card-highlight"></div>
                     <div id="card-main">
                         <h3 id="card-title">Advanced Project</h3>
                         <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit dicta voluptates eum voluptate ab explicabo illo? Tenetur labore distinctio sunt doloribus sed molestias incidunt nam? Aperiam delectus tempore qui.</p>
-                        <img src="" alt="star icon"><img src="" alt="eye icon"><img src="" alt="share icon"></div>
+                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    </div>
                 </div>
                 <div class="card">
                     <div id="card-highlight"></div>
                     <div id="card-main">
                         <h3 id="card-title">Easy Project</h3>
                         <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime dolores repellendus illum veritatis, quas necessitatibus ex odit ea doloribus consequatur, commodi eum voluptas voluptatem, qui itaque? Nostrum, saepe natus.</p>
-                        <img src="" alt="star icon"><img src="" alt="eye icon"><img src="" alt="share icon"></div>
+                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    </div>
                 </div>
                 <div class="card">
                     <div id="card-highlight"></div>
                     <div id="card-main">
                         <h3 id="card-title">Hard Task</h3>
                         <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere excepturi nobis eos deserunt tempore, dolores maiores porro sunt, similique, obcaecati atque. Quam fugit quia, quibusdam aliquid repellendus rem ad.</p>
-                        <img src="" alt="star icon"><img src="" alt="eye icon"><img src="" alt="share icon"></div>
+                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">    
+                    </div>
                 </div>
                 <div class="card">
                     <div id="card-highlight"></div>
                     <div id="card-main">
                         <h3 id="card-title">Simple App</h3>
                         <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit explicabo repellat iste. Debitis, a tempore dignissimos rerum, excepturi veritatis quibusdam magnam quisquam officiis reiciendis nostrum explicabo voluptatum animi? Repellat, totam.</p>
-                        <img src="" alt="star icon"><img src="" alt="eye icon"><img src="" alt="share icon"></div>
+                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    </div>
                 </div>
                 <div class="card">
                     <div id="card-highlight"></div>
                     <div id="card-main">
                         <h3 id="card-title">Customer Ticket</h3>
                         <p id="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem expedita officia, ducimus corrupti quaerat animi consequatur? Aperiam, deleniti dolor illo velit doloribus quasi sunt nam, sed, voluptatem enim praesentium! Adipisci?</p>
-                        <img src="" alt="star icon"><img src="" alt="eye icon"><img src="" alt="share icon"></div>
+                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    </div>
                 </div>
                 <div class="card">
                     <div id="card-highlight"></div>
                     <div id="card-main">
                         <h3 id="card-title">Ongoing Task</h3>
                         <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quam animi assumenda maiores, ipsa a explicabo necessitatibus qui sapiente dicta! Labore tenetur nihil et adipisci quam inventore dolore fugiat id!</p>
-                        <img src="" alt="star icon"><img src="" alt="eye icon"><img src="" alt="share icon"></div>
+                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    </div>
                 </div>
             </div>
             <div id="announcments">
@@ -109,16 +128,16 @@
             </div>
             <h2 class="content-header"></h2>
             <div id="trending">
-                <img src="" alt="profile badge">
+                <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
                 <p>@mev</p>
                 <p>Big Dingus</p>
-                <img src="" alt="profile badge">
+                <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
                 <p>@ryhow</p>
                 <p>Bigger Dingus</p>
-                <img src="" alt="profile badge">
+                <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
                 <p>@amanda</p>
                 <p>The Best</p>
-                <img src="" alt="profile badge">
+                <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
                 <p>@trent</p>
                 <p>bro</p>
             </div>
