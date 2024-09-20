@@ -244,6 +244,10 @@ h1, h2, h3, h4 {
     border-bottom: 1px solid #343a40;
 }
 
+.card p {
+    padding-top: 5px;
+}
+
 .card-images {
     display: flex;
     justify-content: flex-end;
