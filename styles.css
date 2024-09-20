@@ -309,6 +309,10 @@ h1, h2, h3, h4 {
     font-size: 1.1em;
 }
 
+.announcement p {
+    padding-top: 5px;
+}
+
 #announcements :last-child {
     border-style: none;
 }
