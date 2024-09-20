@@ -62,6 +62,12 @@ p {
     width: 30px;
 }
 
+@media (maxwidth: 1100px) {
+    #card-container{
+        grid-template-columns: 1;
+    }
+}
+
 #wrapper {
     display: grid;
     grid-template: 170px 3fr/260px 4fr;
