@@ -9,9 +9,9 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <div id="search">
+            <div id="search-container">
                 <img class="dark-icon" src="images/magnify.svg" alt="search icon">
-                <input type="text" id="search-bar">
+                <input type="text" id="search">
             </div>
             <div id="profile-tray">
                 <img class="dark-icon" src="images/bell-alert-outline.svg" alt="notification icon">
@@ -37,119 +37,182 @@
                 <h1>Dashboard</h1>
             </div>
             <div id="nav">
-                <img class="light-icon" src="images/home.svg" alt="Home">
-                <p>Home</p>
-                <img class="light-icon" src="images/account-details.svg" alt="Profile">
-                <p>Profile</p>
-                <img class="light-icon" src="images/message-reply.svg" alt="Messages">
-                <p>Messages</p>
-                <img class="light-icon" src="images/history.svg" alt="History">
-                <p>History</p>
-                <img class="light-icon" src="images/calendar-check.svg" alt="Tasks">
-                <p>Tasks</p>
-                <img class="light-icon" src="images/human-queue.svg" alt="Communities">
-                <p>Communities</p>
-                <img class="light-icon" src="images/cog.svg" alt="Settings">
-                <p>Settings</p>
-                <img class="light-icon" src="images/frequently-asked-questions.svg" alt="Support">
-                <p>Support</p>
-                <img class="light-icon" src="images/shield-account-variant.svg" alt="Privacy">
-                <p>Privacy</p>
+                <div>
+                    <img class="light-icon" src="images/home.svg" alt="Home">
+                    <p>Home</p>
+                </div>
+                <div>
+                    <img class="light-icon" src="images/account-details.svg" alt="Profile">
+                    <p>Profile</p>
+                </div>
+                <div>
+                    <img class="light-icon" src="images/message-reply.svg" alt="Messages">
+                    <p>Messages</p>
+                </div>
+                <div>
+                    <img class="light-icon" src="images/history.svg" alt="History">
+                    <p>History</p>
+                </div>
+                <div>
+                    <img class="light-icon" src="images/calendar-check.svg" alt="Tasks">
+                    <p>Tasks</p>
+                </div>
+                <div>
+                    <img class="light-icon" src="images/human-queue.svg" alt="Communities">
+                    <p>Communities</p>
+                </div>
+                <div></div>
+                <div>
+                    <img class="light-icon" src="images/cog.svg" alt="Settings">
+                    <p>Settings</p>
+                </div>
+                <div>
+                    <img class="light-icon" src="images/frequently-asked-questions.svg" alt="Support">
+                    <p>Support</p>
+                </div>
+                <div>
+                    <img class="light-icon" src="images/shield-account-variant.svg" alt="Privacy">
+                    <p>Privacy</p>
+                </div>
             </div>
         </div>
         <div id="main-content">
-            <h2 class="content-header" id="card-header">Your Projects</h2>
-            <h2 class="content-header" id="announcement-header">Announcements</h2>
+            <div class="content-title">
+                <h2 class="card-title">Your Projects</h2>
+            </div>
+            <div class="content-title">
+                <h2 id="announcement-title">Announcements</h2>
+            </div>
             <div id="card-container">
-                <div class="card">
-                    <div id="card-highlight"></div>
-                    <div id="card-main">
-                        <h3 id="card-title">Advanced Project</h3>
+                <div class="card"><div>
+                    <div class="card-highlight"></div>
+                    <div class="card-main">
+                        <h3 class="card-title">Advanced Project</h3>
                         <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi velit dicta voluptates eum voluptate ab explicabo illo? Tenetur labore distinctio sunt doloribus sed molestias incidunt nam? Aperiam delectus tempore qui.</p>
-                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
-                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
-                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    </div></div>
+                    <div class="card-images">
+                        <div class="card-image-container">
+                            <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                            <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                            <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div id="card-highlight"></div>
-                    <div id="card-main">
-                        <h3 id="card-title">Easy Project</h3>
-                        <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime dolores repellendus illum veritatis, quas necessitatibus ex odit ea doloribus consequatur, commodi eum voluptas voluptatem, qui itaque? Nostrum, saepe natus.</p>
-                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
-                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
-                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    <div>
+                        <div class="card-highlight"></div>
+                        <div class="card-main">
+                            <h3 class="card-title">Easy Project</h3>
+                            <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro maxime dolores repellendus illum veritatis, quas necessitatibus ex odit ea doloribus consequatur, commodi eum voluptas voluptatem, qui itaque? Nostrum, saepe natus.</p>
+                        </div>
+                    </div>
+                    <div class="card-images">
+                        <div class="card-image-container">
+                            <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                            <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                            <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div id="card-highlight"></div>
-                    <div id="card-main">
-                        <h3 id="card-title">Hard Task</h3>
-                        <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere excepturi nobis eos deserunt tempore, dolores maiores porro sunt, similique, obcaecati atque. Quam fugit quia, quibusdam aliquid repellendus rem ad.</p>
-                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
-                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
-                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">    
+                    <div>
+                        <div class="card-highlight"></div>
+                        <div class="card-main">
+                            <h3 class="card-title">Hard Task</h3>
+                            <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facere excepturi nobis eos deserunt tempore, dolores maiores porro sunt, similique, obcaecati atque. Quam fugit quia, quibusdam aliquid repellendus rem ad.</p>
+                        </div>
+                    </div>
+                    <div class="card-images">
+                        <div class="card-image-container">
+                            <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                            <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                            <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div id="card-highlight"></div>
-                    <div id="card-main">
-                        <h3 id="card-title">Simple App</h3>
-                        <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit explicabo repellat iste. Debitis, a tempore dignissimos rerum, excepturi veritatis quibusdam magnam quisquam officiis reiciendis nostrum explicabo voluptatum animi? Repellat, totam.</p>
-                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
-                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
-                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    <div>
+                        <div class="card-highlight"></div>
+                        <div class="card-main">
+                            <h3 class="card-title">Simple App</h3>
+                            <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit explicabo repellat iste. Debitis, a tempore dignissimos rerum, excepturi veritatis quibusdam magnam quisquam officiis reiciendis nostrum explicabo voluptatum animi? Repellat, totam.</p>
+                        </div>
+                    </div>
+                    <div class="card-images">
+                        <div class="card-image-container">
+                            <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                            <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                            <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                        </div>
                     </div>
                 </div>
                 <div class="card">
-                    <div id="card-highlight"></div>
-                    <div id="card-main">
-                        <h3 id="card-title">Customer Ticket</h3>
-                        <p id="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem expedita officia, ducimus corrupti quaerat animi consequatur? Aperiam, deleniti dolor illo velit doloribus quasi sunt nam, sed, voluptatem enim praesentium! Adipisci?</p>
-                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
-                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
-                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    <div>
+                        <div class="card-highlight"></div>
+                        <div class="card-main">
+                            <h3 class="card-title">Customer Ticket</h3>
+                            <p id="card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem expedita officia, ducimus corrupti quaerat animi consequatur? Aperiam, deleniti dolor illo velit doloribus quasi sunt nam, sed, voluptatem enim praesentium! Adipisci?</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div id="card-highlight"></div>
-                    <div id="card-main">
-                        <h3 id="card-title">Ongoing Task</h3>
-                        <p id="card-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quam animi assumenda maiores, ipsa a explicabo necessitatibus qui sapiente dicta! Labore tenetur nihil et adipisci quam inventore dolore fugiat id!</p>
-                        <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
-                        <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
-                        <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                    <div class="card-images">
+                        <div class="card-image-container">
+                            <img src="images/star-plus-outline.svg" alt="star icon" class="card-icon">
+                            <img src="images/eye-outline.svg" alt="eye icon" class="card-icon">
+                            <img class="card-icon" src="images/source-fork.svg" alt="fork icon">
+                        </div>
                     </div>
                 </div>
             </div>
             <div id="announcements">
                 <div class="announcement">
-                    <p class="announcement-title">Q4 Financials</p>
-                    <p class="announcement-preview">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis atque nihil sint, aliquid corrupti laudantium sit in tempore ipsum, quos voluptates numquam provident iusto totam, expedita asperiores quo aliquam quas!</p>
+                    <h3 class="announcement-title">Q4 Financials</h3>
+                    <p class="announcement-preview">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis atque nihil sint, aliquid corrupti laudantium sit in tempore ipsum, quos voluptates...</p>
                 </div>
                 <div class="announcement">
-                    <p class="announcement-title">Townhall Meeting</p>
-                    <p class="announcement-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem, quia voluptates natus perferendis nam quasi molestias reprehenderit temporibus quidem rem ducimus expedita fugit tempore cum voluptate nihil cumque. Eos.</p>
+                    <h3 class="announcement-title">Townhall Meeting</h3>
+                    <p class="announcement-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolorem, quia voluptates natus perferendis nam quasi molestias reprehenderit temporibus...</p>
                 </div>
                 <div class="announcement">
-                    <p class="announcement-title">Summer Learning Classes</p>
-                    <p class="announcement-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia eum est dolor at porro rem, aut minima iste praesentium laudantium recusandae! Eaque consequatur reiciendis molestias minima rerum eius. Dolore?</p>
+                    <h3 class="announcement-title">Summer Learning Classes</h3>
+                    <p class="announcement-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia eum est dolor at porro rem, aut minima iste praesentium...</p>
+                </div>
+                <div class="announcement">
+                    <h3 class="announcement-title">Big Event!</h3>
+                    <p class="announcement-preview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia eum est dolor at porro rem, aut minima iste praesentium...</p>
                 </div>
             </div>
-            <h2 class="content-header" id="trending-header">Trending</h2>
+            <div class="content-title">
+                <h2 id="trending-title">Trending</h2>
+            </div>
             <div id="trending">
-                <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
-                <p>@mev</p>
-                <p>Big Dingus</p>
-                <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
-                <p>@ryhow</p>
-                <p>Bigger Dingus</p>
-                <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
-                <p>@amanda</p>
-                <p>The Best</p>
-                <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
-                <p>@trent</p>
-                <p>bro</p>
+                <div class="trending-profile">
+                    <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
+                    <div class="profile-description">
+                        <p>@mev</p>
+                        <p>Big Dingus</p>
+                    </div>
+                </div>
+                <div class="trending-profile">
+                    <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
+                    <div class="profile-description">
+                        <p>@ryhow</p>
+                        <p>Bigger Dingus</p>
+                    </div>
+                </div>
+                <div class="trending-profile">
+                    <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
+                    <div class="profile-description">
+                        <p>@amanda</p>
+                        <p>The Best</p>
+                    </div>
+                </div>
+                <div class="trending-profile">
+                    <img class="small-badge" src="images/account-circle-outline.svg" alt="profile badge">
+                    <div class="profile-description">
+                        <p>@trent</p>
+                        <p>bro</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
