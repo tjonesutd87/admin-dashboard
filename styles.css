@@ -4,7 +4,6 @@
          url('fonts/barlow-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -13,7 +12,6 @@
          url('fonts/barlow-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -22,20 +20,25 @@
          url('fonts/archivonarrow-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'archivo_narrowregular';
-    src: url('fonts/archivonarrow-regular-webfont.woff2') format('woff2'),
-         url('fonts/archivonarrow-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 p {
     margin: 0;
+}
+
+html, body {
+    margin: 0px;
+}
+
+body {
+    padding: 0px;
+    font-family: 'barlowregular', sans-serif;
+    background-color: #000;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .dark-icon, .light-icon {
@@ -62,34 +65,26 @@ p {
     width: 30px;
 }
 
-@media (max-width: 1100px) {
-    #card-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
-}
-
 #wrapper {
     display: grid;
     grid-template: 170px 3fr/260px 4fr;
-    margin: auto;
+    margin: 0 auto;
     padding: 0px;
     width: 80%;
     border-left: 2px solid #252525;
     border-right: 2px solid #252525;
 }
 
-body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'barlowregular', sans-serif;
-    background-color: #000;;
+#greeting-container p {
+    font-family: 'barlowbold', sans-serif;
+}
+
+#greeting-name {
+    font-size: 1.75em;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'archivo_narrowregular', sans-serif;
+    font-family: 'archivo_narrowbold', sans-serif;
 }
 
 #header {
@@ -130,6 +125,7 @@ h1, h2, h3, h4 {
     align-items: center;
     margin: 10px 20px;
     gap: 40px;
+    font-family: 'barlowbold', sans-serif;
 }
 
 #greeting {
@@ -150,10 +146,14 @@ h1, h2, h3, h4 {
     color: #fff;
     border-right: 1px solid #778da9;
     font-family: 'barlowbold', sans-serif;
+    font-size: 1.2em;;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 #logo h1 {
-    color: #ffc300;
+    color: #2b2b2b;
     text-align: center;
 }
 
@@ -207,7 +207,8 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;;
     align-items: flex-start;
-    gap: 5px;
+    gap: px;
+    margin-left: 10px;
 }
 #nav div {
     display: flex;
@@ -286,6 +287,15 @@ h1, h2, h3, h4 {
     border-radius: 20px;
 }
 
+.card-image-container img:hover {
+    filter: drop-shadow(3px 3px 2px rgb(56, 48, 0));
+    cursor: pointer;
+}
+
+.card-image-container img:active {
+    filter: drop-shadow(1px 1px 1px rgb(56, 48, 0));
+}
+
 .profile-description {
     display: flex;
     flex-direction: column;
@@ -337,4 +347,70 @@ h1, h2, h3, h4 {
 
 #announcements :last-child {
     border-style: none;
+}
+
+@media (max-width: 1100px) {
+    #card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #wrapper{
+        width: 100%;
+    }
+}
+
+#button-container button:hover {
+    background-color: #7e6000;
+    cursor: pointer;
+}
+
+#button-container button:active {
+    color: #fff;
+    -webkit-box-shadow: inset 0px 0px 6px 2px #312B00; 
+    box-shadow: inset 0px 0px 6px 2px #312B00;
+}
+
+.profile-name {
+    font-family: 'barlowbold', sans-serif;
+    font-size: 1.1em;
+}
+
+.profile-nickname {
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited {
+    color: #858585;
+}
+
+a:hover {
+    color: #bbbbbb;
+}
+
+a:active {
+    color: #3f3f3f;
+}
+
+#nav a {
+    color: #858585;
+}
+
+#nav a:visited {
+    color: #858585;
+}
+
+#nav a:hover {
+    color: #5e5e5e;
+}
+
+#nav a:active {
+    color: #3f3f3f;
 }
